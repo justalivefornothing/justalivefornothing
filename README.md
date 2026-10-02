@@ -23,6 +23,8 @@ Focused changes to forks of [arshnah's projects](https://github.com/arshnah): [I
 
 These changes are merged in my forks. The linked PRs document the work and its verification.
 
+In review: [stable banner links](https://github.com/goonerlogy-cyber/random-banner/pull/1), [music queue reliability](https://github.com/goonerlogy-cyber/cores-beatzzz/pull/1), [saved-profile recovery](https://github.com/goonerlogy-cyber/typer/pull/1), and [chat delivery and retries](https://github.com/goonerlogy-cyber/chat/pull/1).
+
 </details>
 
 <sub>[Repositories](https://github.com/goonerlogy-cyber?tab=repositories) · [Pull requests](https://github.com/pulls?q=is%3Apr+author%3Agoonerlogy-cyber)</sub>
