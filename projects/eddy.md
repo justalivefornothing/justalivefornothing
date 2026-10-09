@@ -1,8 +1,8 @@
-# Eddy
+﻿# Eddy
 
 Paint the flow.
 
-**TypeScript · WebGL2 · GLSL · Private source**
+**TypeScript · WebGL2 · GLSL · [Source code ?](https://github.com/justalivefornothing/eddy-fluid)**
 
 ![Eddy fluid painting and simulation controls](../assets/eddy-preview.png)
 

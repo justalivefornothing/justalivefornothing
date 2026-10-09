@@ -1,8 +1,8 @@
-# Kiln
+﻿# Kiln
 
 A small language, down to the bytes.
 
-**TypeScript · Compiler design · WebAssembly · Private source**
+**TypeScript · Compiler design · WebAssembly · [Source code ?](https://github.com/justalivefornothing/kiln-lang)**
 
 ![Kiln bytecode inspector and Mandelbrot canvas output](../assets/kiln-preview.png)
 

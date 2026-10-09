@@ -1,30 +1,29 @@
-<img src="./assets/jafn-masthead.png" width="100%" alt="JAFN — software experiments in search, compilers, and graphics" />
+﻿<img src="./assets/jafn-masthead.png" width="100%" alt="JAFN — software experiments in search, compilers, and graphics" />
 
 I build search engines, compilers, and interactive graphics — with the interesting parts exposed.
 
 <a href="./projects/sift.md"><img src="./assets/sift-card.png" width="100%" alt="Sift — search, explained. View the project notes." /></a>
 
-<sub>[Project notes →](./projects/sift.md) · TypeScript · Web Workers · Private source</sub>
+<sub>[Project notes →](./projects/sift.md) · [Source code →](https://github.com/justalivefornothing/sift-search) · TypeScript · Web Workers</sub>
 
 <a href="./projects/kiln.md"><img src="./assets/kiln-card.png" width="100%" alt="Kiln — source to WebAssembly. View the project notes." /></a>
 
-<sub>[Project notes →](./projects/kiln.md) · Compiler design · WebAssembly · Private source</sub>
+<sub>[Project notes →](./projects/kiln.md) · [Source code →](https://github.com/justalivefornothing/kiln-lang) · Compiler design · WebAssembly</sub>
 
 <a href="./projects/eddy.md"><img src="./assets/eddy-card.png" width="100%" alt="Eddy — paint the flow. View the project notes." /></a>
 
-<sub>[Project notes →](./projects/eddy.md) · WebGL2 · GLSL · Private source</sub>
+<sub>[Project notes →](./projects/eddy.md) · [Source code →](https://github.com/justalivefornothing/eddy-fluid) · WebGL2 · GLSL</sub>
 
 ---
 
-<details>
-<summary>Open-source contributions</summary>
+### Selected Systems & Experiments
 
-Focused changes to forks of [arshnah's projects](https://github.com/arshnah): [IPv6 discovery](https://github.com/goonerlogy-cyber/portgraph/pull/1), [terminal replay](https://github.com/goonerlogy-cyber/replay/pull/1), [JSON reports](https://github.com/goonerlogy-cyber/gitpulse/pull/1), [job completion](https://github.com/goonerlogy-cyber/toil/pull/1), [one-time sharing](https://github.com/goonerlogy-cyber/cipherdrop/pull/1), and [exact secret input](https://github.com/goonerlogy-cyber/zkaudit/pull/1).
+- [**Chorus**](https://github.com/justalivefornothing/chorus-editor) — Multi-cursor collaborative code editor powered by a custom RGA sequence CRDT.
+- [**Impulse**](https://github.com/justalivefornothing/impulse-physics) — From-scratch 2D rigid-body physics engine with SAT collision & sequential-impulse solving.
+- [**Threadbare**](https://github.com/justalivefornothing/threadbare-regex) — Regex engine (parser → Thompson NFA → simulation) with animated live state transitions on canvas.
+- [**Sprig Lisp**](https://github.com/justalivefornothing/sprig-lisp) — Scheme-flavored Lisp with lexical closures, proper tail calls, and visual environment tree REPL.
+- [**Turing Soup**](https://github.com/justalivefornothing/turing-soup-rd) — GPU Gray-Scott reaction-diffusion simulation with paintable parameters.
+- [**Stackle VM**](https://github.com/justalivefornothing/stackle-vm) — Expression language compiled to bytecode for an inspectable stack VM.
+- [**Fennec-8**](https://github.com/justalivefornothing/fennec-8) — Two-pass assembler and cycle-stepped 8-bit CPU emulator with 16x16 pixel display.
 
-These changes are merged in my forks. The linked PRs document the work and its verification.
-
-In review: [stable banner links](https://github.com/goonerlogy-cyber/random-banner/pull/1), [music queue reliability](https://github.com/goonerlogy-cyber/cores-beatzzz/pull/1), [saved-profile recovery](https://github.com/goonerlogy-cyber/typer/pull/1), and [chat delivery and retries](https://github.com/goonerlogy-cyber/chat/pull/1).
-
-</details>
-
-<sub>[Repositories](https://github.com/goonerlogy-cyber?tab=repositories) · [Pull requests](https://github.com/pulls?q=is%3Apr+author%3Agoonerlogy-cyber)</sub>
+<sub>[All Repositories](https://github.com/justalivefornothing?tab=repositories)</sub>

@@ -1,8 +1,8 @@
-# Sift
+﻿# Sift
 
 Search that shows its work.
 
-**TypeScript · Web Workers · Private source**
+**TypeScript · Web Workers · [Source code ?](https://github.com/justalivefornothing/sift-search)**
 
 ![Sift search results and ranking explainer](../assets/sift-preview.png)
 
