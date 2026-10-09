@@ -1,8 +1,8 @@
 ﻿# Eddy
 
-Paint the flow.
+An interactive fluid-painting playground.
 
-**TypeScript · WebGL2 · GLSL · [Source code ?](https://github.com/justalivefornothing/eddy-fluid)**
+[Source and run instructions](https://github.com/justalivefornothing/eddy-fluid) · TypeScript · WebGL2 · GLSL
 
 ![Eddy fluid painting and simulation controls](../assets/eddy-preview.png)
 
@@ -17,13 +17,10 @@ An interactive fluid playground with mouse-and-touch painting, tunable presets, 
 
 ## Giving audio a clean lifecycle
 
-Turning audio off cancels a pending microphone request. A stream granted after cancellation is disposed immediately; initialization failures and pending audio-context resumes also release their resources.
+The [audio-lifecycle fix (#1)](https://github.com/justalivefornothing/eddy-fluid/pull/1), merged September 24, 2026, cancels pending microphone startup when audio is turned off. A stream granted after cancellation is disposed immediately; initialization failures and pending audio-context resumes also release their resources.
 
-<details>
-<summary>Verification and limits</summary>
+## Limits
 
-The audio-lifecycle change passed **97 tests**, the TypeScript/Vite build, lint, and Linux/Windows Node 24 CI. Audio tests use mocked devices. This visual simulation has a lower-precision packed fallback; GPU performance varies by device and settings. The image above is an application screenshot.
+Audio tests use mocked devices. This visual simulation has a lower-precision packed fallback; GPU performance varies by device and settings.
 
-</details>
-
-[← Back to selected work](../README.md)
+[Back to experiments](experiments.md) · [Back to profile](../README.md)

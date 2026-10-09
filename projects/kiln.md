@@ -1,28 +1,27 @@
-﻿# Kiln
+# Kiln
 
-A small language, down to the bytes.
+A small typed language that compiles to WebAssembly in the browser.
 
-**TypeScript · Compiler design · WebAssembly · [Source code ?](https://github.com/justalivefornothing/kiln-lang)**
+[Source and run instructions](https://github.com/justalivefornothing/kiln-lang) · TypeScript · WebAssembly
 
 ![Kiln bytecode inspector and Mandelbrot canvas output](../assets/kiln-preview.png)
 
-Kiln compiles a small statically typed language into real WebAssembly binaries in the browser. Its editor makes the compiler stages inspectable, from tokens and syntax trees to the emitted bytes and program output.
+The editor connects source code to tokens, a syntax tree, emitted bytes, disassembly, and program output. The compiler writes WebAssembly binaries directly. The Mandelbrot example draws through the canvas host's `setpixel` function.
 
-## The pipeline
+## Supported subset
 
-Source → lexer → parser → type checker → binary emitter → WebAssembly → worker runtime.
+- `i32`, `f32`, and `bool` values, with explicit numeric casts and local type inference.
+- Functions, recursion, lexical scopes, conditionals, and loops.
+- Linear-memory views and host functions for printing and drawing on a 256 × 256 canvas.
 
-The interface connects source, compiler inspectors, a console, and a canvas host. The Mandelbrot example demonstrates a program writing 65,536 pixels through that host.
+There are no strings, structs, modules, or general array type. Emitted modules start with one 64 KiB memory page; the language does not expose memory growth. There is no separate optimization stage.
 
-## Execution stays isolated
+## A concrete fix
 
-Programs run in a dedicated worker with cancellation and an eight-second deadline. If worker creation is blocked, compilation and inspection still work, but execution reports an actionable error. There is no unbounded fallback on the UI thread.
+[Keep program execution off the UI thread (#1)](https://github.com/justalivefornothing/kiln-lang/pull/1), merged September 24, 2026, removed the inline-execution fallback. When workers were unavailable, that fallback could let an infinite loop freeze the UI and bypass cancellation.
 
-<details>
-<summary>Verification</summary>
+Programs now run in a dedicated worker. Cancellation and the default eight-second timeout terminate it. If worker creation fails, compilation and inspection remain available, while execution reports an error.
 
-The runtime change passed **53 tests**, the TypeScript/Vite build, and Linux/Windows Node 24 CI. Lint passed with four existing warnings. Browser verification covered Mandelbrot output and the unavailable-worker error path. The image above is an application screenshot.
+The [runner](https://github.com/justalivefornothing/kiln-lang/blob/main/src/runtime/runner.ts) and [runtime tests](https://github.com/justalivefornothing/kiln-lang/blob/main/src/runtime/runner.test.ts) show the behavior and its regression coverage.
 
-</details>
-
-[← Back to selected work](../README.md)
+[Back to profile](../README.md)
