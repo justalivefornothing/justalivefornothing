@@ -18,4 +18,4 @@ A recent fix removed a fallback that could run an infinite loop on the UI thread
 
 ---
 
-[Other experiments](projects/experiments.md) · [All repositories](https://github.com/justalivefornothing?tab=repositories) · [Website](https://jafn-portfolio.vercel.app)
+[Other experiments](projects/experiments.md) · [All repositories](https://github.com/justalivefornothing?tab=repositories)
